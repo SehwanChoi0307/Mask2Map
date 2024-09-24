@@ -29,11 +29,12 @@ However, we observed limited performance in Mask2Map due to inter-network incons
 
 <div align="center"><h4> nuScenes dataset</h4></div>
 
-| Method | Backbone | BEVEncoder |Lr Schd | mAP| Config | Download |
-| :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
-| Mask2Map| R50 |bevpool | 24ep | 71.6 |[config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_12n12ep.py) |[model_phase1](https://drive.google.com/file/d/1yWyYR-8HD6Ias5EdrfzDNbPMHcbV4jIZ/view?usp=sharing) / [model_phase2](https://drive.google.com/file/d/1eNwGSGAmHYip0nWjEb-HCYFiglLwTajW/view?usp=sharing)| 
-| Mask2Map| R50 |bevpool | 110ep | 75.4 |[config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_55n55ep.py) |[model_phase1](https://drive.google.com/file/d/1Jbjhjl1n9vY05MSuGS-cMEcM2Ck_AoFP/view?usp=sharing) / [model_phase2](https://drive.google.com/file/d/1SpZhat0T9Hq0pZQrHOAgVuru3O8eZyId/view?usp=sharing)|
 
+
+| Method | Backbone | BEVEncoder |Lr Schd | mAP| config | Download_phase1 | Download_phase2 |
+| :---: | :---: | :---: | :---: |  :---: |:----------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------:|
+| Mask2Map| R50 |bevpool | 24ep | 71.6 | [config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_12n12ep.py) | [model_phase1](https://drive.google.com/file/d/1yWyYR-8HD6Ias5EdrfzDNbPMHcbV4jIZ/view?usp=sharing) | [model_phase2](https://drive.google.com/file/d/1eNwGSGAmHYip0nWjEb-HCYFiglLwTajW/view?usp=sharing) | 
+| Mask2Map| R50 |bevpool | 110ep | 75.4 | [config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_55n55ep.py) | [model_phase1](https://drive.google.com/file/d/1Jbjhjl1n9vY05MSuGS-cMEcM2Ck_AoFP/view?usp=sharing) | [model_phase2](https://drive.google.com/file/d/1SpZhat0T9Hq0pZQrHOAgVuru3O8eZyId/view?usp=sharing) |
 
 **Notes**: 
 - All the experiments are performed on 4 NVIDIA GeForce RTX 3090 GPUs. 
