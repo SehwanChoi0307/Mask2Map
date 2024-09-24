@@ -39,7 +39,7 @@ However, we observed limited performance in Mask2Map due to inter-network incons
 **Notes**: 
 - All the experiments are performed on 4 NVIDIA GeForce RTX 3090 GPUs. 
 
-<!-- ## Getting Started
+## Getting Started
 - [Installation](docs/install.md)
 - [Prepare Dataset](docs/prepare_dataset.md)
 - [Train and Eval](docs/train_eval.md)
