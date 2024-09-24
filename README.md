@@ -8,7 +8,7 @@ Sewhan Choi<sup>1</sup> \*, Jungho Kim<sup>1</sup> \*, Hongjae Shin<sup>1</sup>,
 
 (\*) equal contribution, (<sup>**</sup>) corresponding author.
 
-ECCV papers ([ECCV2024]((https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08664.pdf)))
+ECCV papers ([ECCV2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08664.pdf))
 
 ArXiv Preprint ([arXiv 2208.05736](https://arxiv.org/abs/2308.05736))
 
