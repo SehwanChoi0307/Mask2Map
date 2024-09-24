@@ -22,6 +22,27 @@ In this paper, we introduce Mask2Map, a novel end-to-end online HD map construct
 Mask2Map consists of two primary components: the Instance-Level Mask Prediction Network (IMPNet) and the Mask-Driven Map Prediction Network (MMPNet). IMPNet generates Mask-Aware Queries and BEV Segmentation Masks to capture comprehensive semantic information globally. Subsequently, MMPNet enhances these query features using local contextual information through two submodules: the Positional Query Generator (PQG) and the Geometric Feature Extractor (GFE). PQG extracts instance-level positional queries by embedding BEV positional information into Mask-Aware Queries, while GFE utilizes BEV Segmentation Masks to generate point-level geometric features.
 However, we observed limited performance in Mask2Map due to inter-network inconsistency stemming from different predictions to Ground Truth (GT) matching between IMPNet and MMPNet. To tackle this challenge, we propose the Inter-network Denoising Training method, which guides the model to denoise the output affected by both noisy GT queries and perturbed BEV Segmentation Masks.
 
+## Models
+> Results from the [Mask2Map paper](https://arxiv.org/abs/2308.05736)
+
+## Qualitative results on nuScenes val split 
+
+<div align="center"><h4> nuScenes dataset</h4></div>
+
+| Method | Backbone | BEVEncoder |Lr Schd | mAP| Config | Download |
+| :---: | :---: | :---: | :---: |  :---: | :---: | :---: | :---: |
+| Mask2Map| R50 |bevpool | 24ep | 71.6 |[config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_12n12ep.py) |[model_phase1](https://drive.google.com/file/d/1yWyYR-8HD6Ias5EdrfzDNbPMHcbV4jIZ/view?usp=sharing) / [model_phase2](https://drive.google.com/file/d/1eNwGSGAmHYip0nWjEb-HCYFiglLwTajW/view?usp=sharing)| 
+| Mask2Map| R50 |bevpool | 110ep | 75.4 |[config](https://github.com/SehwanChoi0307/Mask2Map/tree/main/projects/configs/mask2map/M2M_nusc_r50_full_2Phase_55n55ep.py) |[model_phase1](https://drive.google.com/file/d/1Jbjhjl1n9vY05MSuGS-cMEcM2Ck_AoFP/view?usp=sharing) / [model_phase2](https://drive.google.com/file/d/1SpZhat0T9Hq0pZQrHOAgVuru3O8eZyId/view?usp=sharing)|
+
+
+**Notes**: 
+- All the experiments are performed on 4 NVIDIA GeForce RTX 3090 GPUs. 
+
+<!-- ## Getting Started
+- [Installation](docs/install.md)
+- [Prepare Dataset](docs/prepare_dataset.md)
+- [Train and Eval](docs/train_eval.md)
+
 
 ## Demo
 
