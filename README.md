@@ -14,6 +14,14 @@ ArXiv Preprint ([arXiv 2208.05736](https://arxiv.org/abs/2308.05736))
 
 </div>
 
+## Updates
+* [2024-09] Release the model codes and trained weights of 24 and 110 epochs on the nuScenes dataset, respectively
+
+## Upcomings
+* [2024-10] Trained weights on the Argoverse2 dataset.
+* [2024-10] Trained weights for camera and LiDAR fusion on the nuScenes dataset.
+
+
 
 ## Introduction
 
