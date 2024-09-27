@@ -739,7 +739,7 @@ class Mask2Map_Transformer_2Phase_CP(BaseModule):
 
     def MaskGuidedMapDecoder(self, query, key, value, bev_embed_ms, mask_aware_query, mask_aware_query_norm, reg_branches, cls_branches, **kwargs):
         bs = mask_aware_query.shape[0]
-        q = query.shape[1]
+        q = query.shape[1]//bs
         attn_output, _ = self.m_attn(query, key, value)
         attn_output = attn_output.permute(1, 0, 2)
         attn_output = attn_output.reshape(bs, q, -1, self.embed_dims * 2)
