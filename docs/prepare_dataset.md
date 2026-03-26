@@ -22,6 +22,8 @@ python tools/maptrv2/custom_nusc_map_converter.py --root-path ./data/nuscenes --
 
 Using the above code will generate `nuscenes_map_infos_temporal_{train,val}.pkl`, which contain local vectorized map annotations.
 
+You can download pretrained `sparsebev_resnet.pth` from [HERE](https://drive.google.com/file/d/1__hTKk03rRFYN3XW9fYSYm3MorFk1KTp/view?usp=drive_link).
+
 **Folder structure**
 ```
 Mask2Map
@@ -30,7 +32,7 @@ Mask2Map
 ├── tools/
 ├── configs/
 ├── ckpts/
-│   ├── r101_dcn_fcos3d_pretrain.pth
+│   ├── sparsebev_resnet.pth
 ├── data/
 │   ├── can_bus/
 │   ├── nuscenes/
@@ -53,8 +55,6 @@ Mask2Map
 ├── projects/
 ├── tools/
 ├── configs/
-├── ckpts/
-│   ├── r101_dcn_fcos3d_pretrain.pth
 ├── data/
 │   ├── can_bus/
 │   ├── nuscenes/
